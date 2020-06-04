@@ -1,0 +1,54 @@
+package edu.au.cc.gallery.tools;
+
+import software.amazon.awssdk.services.iam.model.IamException;
+import software.amazon.awssdk.regions.Region;
+import software.amazon.awssdk.services.iam.IamClient;
+import software.amazon.awssdk.services.iam.model.CreateUserRequest;
+import software.amazon.awssdk.services.iam.model.CreateUserResponse;
+
+
+
+
+public class UserFunction {
+    private IamClient client;
+
+    public UserFunction() {
+    }
+
+    public void connect() {
+	Region region = Region.US_EAST_2;
+	client = IamClient.builder().region(region).build();
+    }
+
+    
+
+    
+
+    /*Creates a new IAM user by providing a user name to the AmazonIdentityManagementClient's
+     *createUser method, either directly or using a create User Request object containing the user
+     *name. Source: https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/examples-iam-users.html
+     */
+    protected void addUser(String userName) {
+
+    }
+
+    protected void listUsers() {
+
+    }
+
+
+    protected void deleteUser(String userName) {
+
+    }
+
+
+    protected void updateUser(String userName) {
+
+    }
+	
+
+    
+    
+
+
+}
